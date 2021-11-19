@@ -9,7 +9,7 @@ request(argv[0], (error, response, body) => {
   if (error) {
     console.log("HTTP error encountered with site: ", error.hostname);
     process.exit();
-  };
+  }
 
   if (response.statusCode !== 200) {
     console.log("Abnormal HTTP Status Code received: ", response.statusCode);
